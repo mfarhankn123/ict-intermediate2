@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form action="success.html">
+            <input type="text" name="u" placeholder="E mail" id="email" onkeyup="validateEmail()"/>
+            <br>
+            <span id="err1"></span>
+            <br>
+            <input type="text" name="u" placeholder="Phone Number" id="PhoneNumber" onkeyup="validatePhone()"/>
+            <br>
+            <span id="err2"></span>
+            <br>
+            <input type="password" name="p" placeholder="Password" id="password" onkeyup="validatePass()"/>
+            <br>
+            <span id="err3"></span>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block btn-large" onclick="return validateform()">Let me in.</button>
+        </form>
+    </div>
+    <script src="faraan.js"></script>
+</body>
+</html>
